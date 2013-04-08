@@ -1,0 +1,23 @@
+[
+  {
+  	"id": "new-recruit",
+  	"name": "New Recruit",
+  	"event_count": 430
+  }, {
+  	"id": "news",
+  	"name": "News", 
+  	"event_count": 1230 
+  }, { 
+  	"id": "army",
+  	"name": "Army", 
+  	"event_count": 759
+  }, { 
+  	"id": "air-force",
+  	"name": "Air Force", 
+  	"event_count": 980
+  }, { 
+    "id": "navy",
+    "name": "Navy", 
+  	"event_count": 784
+  }
+]
