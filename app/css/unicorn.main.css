@@ -40,6 +40,10 @@ h3 {
   margin-left: 15px;
 }
 
+markdown h3 {
+  margin-left: -5px;
+}
+
 /* Search input */
 #nav-search {
 	position: absolute;
@@ -264,7 +268,7 @@ h3 {
 }
 
 .container-fluid .row-fluid:first-child {
-	margin-top: 20px;
+	margin-top: -20px;
 }
 /* Breadcrumb */
 #breadcrumb {
@@ -1378,6 +1382,10 @@ form {
 	margin-left: 200px;
 	padding: 10px 0;
 }
+textarea#bigdoc {
+	width: 460px !important;
+}
+
 .form-horizontal input[type=text], .form-horizontal input[type=password], .form-horizontal textarea {
 	width: 80% !important;
 }

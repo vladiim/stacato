@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="css/unicorn.grey.css" class="skin-color">
 </head>
 <body>
-
   <!-- <div ng-view></div> -->
 
   <div id='header'><p>Social Risk Manager</p></div>
@@ -46,20 +45,17 @@
     <div class='container-fluid'>
       <div class='row-fluid'>
         <div class='span7'>
-          <h4>
-            Background
-          </h4>
-          <h4>
-            Strategy
-          </h4>
-          <h4>
-            Process
-          </h4>
-          <ol>
-            <li>Step 1</li>
-            <li>Step 2</li>
-            <li>Step 3</li>
-          </ol>
+          <markdown src='data/markdown/test.md'>
+### Background
+
+### Strategy
+
+### Process
+
+1. Step 1
+2. Step 2
+3. Step 3
+          </markdown>
         </div>
 
         <div class='span4'>
@@ -93,6 +89,7 @@
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
   -->
+  <script src="js/showdown.js"></script>
   <script src="lib/angular/angular.js"></script>
   <script src="js/app.js"></script>
   <script src="js/services.js"></script>
