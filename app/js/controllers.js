@@ -7,3 +7,9 @@ function CategoryListCtrl($scope, $http) {
     $scope.categories = data;
   });
 }
+
+function EventListCtrl($scope, $http) {
+  $http.get('data/events.json').success(function(data) {
+    $scope.events = data;
+  });
+}

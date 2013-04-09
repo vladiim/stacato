@@ -39,26 +39,46 @@
     <div ng-view></div> 
 
     <div id='content-header'>
-      <h1>New Recruit Plan</h1>
+      <h1>New Recruit</h1>
     </div>
 
     <div class='container-fluid'>
       <div class='row-fluid'>
         <div class='span7'>
           <markdown src='data/markdown/test.md'>
-### Background
+### Category Summary
+
+Mentions referring to Defence as an employer.
 
 ### Strategy
 
+Understanding the drivers and influencing factors behind recruits considering the Defence Force as a career option gives drives key insights into our [recruitment division](www.linktodiv.com).
+
+### Opportunities
+
+* Insights into recruit drivers.
+* Ability to brief recruitment team on current perception issues.
+
+### Risks
+
+* Negative perceptions.
+
+### Case Studies
+
+* [US protest](www.link.com)
+* [UK conversation](www.link.com) between Afghan troops and school children.
+* [Wikileaks comment](www.link.com)
+
 ### Process
 
-1. Step 1
-2. Step 2
-3. Step 3
+1. **Negative comment from existing staff:** Find staff's direct contact. Report incident to divisional head.
+2. **Neutral discussion on Defence life:** If comments are in open forum share/Retweet.
+4. **Negative comment from existing staff:** Find staff's direct contact. Report incident to divisional head.
+5. **Neutral discussion on Defence life:** If comments are in open forum share/Retweet.
           </markdown>
         </div>
 
-        <div class='span4'>
+        <div class='span4' ng-controller="EventListCtrl">
           <div class='widget-box'>
             <div class='widget-title'>
               <span class='icon'>
@@ -68,12 +88,12 @@
             </div>
             <div class='widget-content nopadding'>
               <ul class='recent-comments'>
-                <li>
+                <li ng-repeat="event in events">
                   <div class='user-thumb'>
-                    <img width='40' height='40' src="img/profile_1.jpeg">
+                    <img width='40' height='40' ng-src="{{event.image}}">
                   </div>
-                  <span class='user-info'><a href="#">@samuelpieto</a> 1 month ago on <a href="">Twitter</a></span>
-                  <p>An everyday single mum of 3 who has just joined the Australian Army. Nothing like change to keep life interesting <a href="">@petabrowne</a> <b>#amazing</b> mum</p>
+                  <span class='user-info'><a href="#">{{event.user}}</a> {{event.date}} <a href="">{{event.source}}</a></span>
+                    {{event.content}}
                 </li>
                 <li class="viewall">
                     <a title="" class="tip-top" href="#" data-original-title="View all comments"> + View all + </a>
